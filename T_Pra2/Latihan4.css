@@ -1,0 +1,403 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linier-gradient(135deg, #f6d365 0%, #fda085 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+   font-size: 2.5em
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* TEXT COLOR EXAMPLES */
+.color-name {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.color-hex {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.color-rgb {
+    color: rgb(231, 76, 60);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.color-rgba {
+    color: rgba(46, 204, 113, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+.color-hsl {
+    color: hsl(120, 64%, 42%);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* BACKROUND COLOR EXAMPLES */
+.bg-solid {
+    background-color: #f39c12;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-transparent {
+    background-color: rgba(243, 156, 18, 0.7);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #3498db;
+}
+
+.bg-position-center {
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?=300');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    margin: 8px;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 100px;
+}
+
+.bg-position-top-right {
+    background-image: url('https://mymodernmet.com/wp/wp-content/uploads/2021/11/albert-dros-colorful-forest-landscape-5.jpg?=200');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #8e44ad;
+    color: white;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+.bg-position-custom {
+    background-image: url('https://www.michaelfrye.com/wp-content/uploads/2022/06/0222-16016.jpg?=250');
+    background-position: 30% 70%;
+    background-repeat: no-repeat;
+    background-color: #16a085;
+    color: white;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 100px;
+}
+.bg-gradient-linier{
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-gradient-radial{
+    background: radial-gradient(circle, #a1c4fd 0%, #c2e9fb 100%);
+    color: #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-gradient-multiple{
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 50%, #a1c4fd 50%, #c2e9fb 100%);
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-image-url {
+    background-image: url('https://i2.pickpik.com/photos/309/497/274/landscape-fog-sunrise-forest-preview.jpg?=300');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 150px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.bg-image-pattern {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/dark_leather.png');
+    background-repeat: repeat;
+    background-color: #34495e;
+    color: white;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bg-image-no-repeat {
+    background-image: url('https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png');
+    background-repeat: no-repeat;
+    background-color: #27ae60;
+    background-position: top rigth;
+    color: white;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 8px;
+    min-height: 120px;
+    border: 2px solid #2ecc71;  
+}
+
+/* Font Family */
+.font-serif {font-family: "Times New Roman", Times, serif;}
+.font-sans {font-family: Arial, Helvetica, sans-serif;}
+.font-monospace {font-family: "Courier New", Courier, monospace;}
+.font-custom {font-family: 'Roboto', sans-serif;}
+
+/* Font Size */
+.size-small {font-size: 12px;}
+.size-medium {font-size: 16px;}
+.size-large {font-size: 24px;}
+.size-xlarge {font-size: 32px;}
+.size-em {font-size: 1.5em;}
+.size-rem {font-size: 1.2rem;}
+
+/* Font Weight */
+.weight-thin {font-weight: 100;}
+.weight-normal {font-weight: 400l;}
+.weigth-bold {font-weight: 700;}
+.weight-bolder {font-weight: bolder;}
+.weight-900 {font-weight: 900;}
+
+/* Font Style */
+.style-normal {font-style: normal;}
+.style-italic {font-style: italic;}
+.style-oblique {font-style: oblique;}
+
+/* Line Heigth */
+.line-small {line-height: 1.2; background:#ffebee; padding:10px;}
+.line-normal {line-height: 1.6; background:#e3f2fd; padding:10px;}
+.line-large {line-height: 2; background:#e8f5e9; padding:10px;}
+
+/* Letter Spacing */
+.ls-tight {letter-spacing: -1px; font-weight: bold;}
+.ls-normal {letter-spacing: 0;}
+.ls-wide {letter-spacing: 3px; text-transform: uppercase;  font-weight: bold; color: #8e44ad;}
+
+/* Word Spacing  */
+.ws-normal {word-spacing: normal;}
+.ws-wide {word-spacing: 10px; background: #fff3e0; padding: 10px;}
+
+/* Shadow */
+.shadow-simple {text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-size:200px; font-weight: bold;}
+.shadow-colored {text-shadow: 3px 3px 0 #3498db; color: #2c3e50; font-size: 18px; font-weight: bold;}
+.shadow-multiple {text-shadow: 1px 1px 0 #e74c3c, 2px 2px 0 #3498db, 3px 3px 0 #2ecc71; font-size: 18px; font-weight: bold;}
+.shadow-glow {text-shadow: 0 0 5px rgba(255,255,255,0.8), 0 0 10px rgba(255,255,255,0.6); color: #34495e; font-size: 18px; font-weight: bold; text-align: center;}
+
+.bg-attachment-scroll{
+    background-color: #3498db;
+    columns: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.bg-attachment-fixed{
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?=300');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    min-height: 200px;
+    text-align: center;
+    text-shadow: 2px    2px 4px rgba(0,0,0,0.2);
+    min-height: 150px;
+}
+
+/* Multi Backgrounds */
+.bg-multiple {
+    background-image: url('https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png'), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?=300');
+    background-position: top left, center;
+    background-repeat: repeat, no-repeat;
+    background-size: 30px 30px, cover;
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    min-height: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.color-scheme {
+    display: grid;
+    grid-template-columns: repeat(auto -fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.color-scheme div {
+padding: 20px;
+text-align: center;
+font-weight: bold;
+border-radius: 8px;
+color : white;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.scheme.primary {background-color: #3498db;}
+.scheme.secondary {background-color: #2ecc71;}
+.scheme.success {background-color: #28a745;}
+
+.bg-size-cover {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?=300');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    min-height: 120px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.bg-size-contain {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?=300');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #34495e;
+    color: white;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 150px;
+    border: 2px solid #2ecc71;
+}
+
+.bg-size-custom {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?=300');
+    background-size: 200px 100px;
+    background-repeat: repeat;
+    background-position: center;
+    background-color: #16a085;
+    color: white;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 150px;
+    border: 2px solid #1abc9c;
+}
+
+.scheme-warning {background-color: #f39c12; color: #ffc107;
+color: #212529; text-shadow: none;}
+.scheme-danger {background-color: #e74c3c;}
+.scheme-info {background-color: #17a2b8;}
+.scheme-light {background-color: #f8f9fa; color: #212529; text-shadow: none;}
+.scheme-dark {background-color: #343a40;}
+
+.color-advanced {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.hover-color:hover {
+    background-color: #8e44ad;
+    transform: scale(1.06);
+}
+
+.shadow-color {
+    background-color: white;
+    color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(52,152,219,0.3), 0 6px 20px rgba(155,89,182,0.3);
+}
+
+.border-color {
+    background-color: #f8f9fa;
+    border: 4px solid #e67e22;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    color: #e67e22;
+    position: relative;
+}
+
+.border-color::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linier-gradient(45deg, #f39c12, #e74c3c, #8e44ad, #3498db, #2ecc71);
+    border-radius: 12px;
+    z-index: -1;
+}   
+
+.text-gradient {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding : 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+}
